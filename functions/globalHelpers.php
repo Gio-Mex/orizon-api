@@ -19,6 +19,6 @@ function getRow($conn, $column, $table, $param) {
     $param = cleanInput($param);
     $query = "SELECT $column FROM $table WHERE UPPER($column) = UPPER(:param)";
     $stmt = executeQuery($conn, $query, [":param" => $param]);
-    return $stmt->fetch(PDO::FETCH_ASSOC);
+    return $stmt->rowCount() > 0;
 }
 ?>

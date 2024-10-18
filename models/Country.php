@@ -23,7 +23,7 @@ class Country
   // Create country
   public function create() {
     // Check if country already exists
-    if (!empty(getRow($this->conn, 'name', $this->table, $this->name))) {
+    if (getRow($this->conn, 'name', $this->table, $this->name)) {
       return false;
     }
     // Create query
@@ -34,7 +34,7 @@ class Country
   // Update country
   public function update() {
     // Check if country already exists
-    if (empty(getRow($this->conn, 'country_id', $this->table, $this->id))) {
+    if (!getRow($this->conn, 'country_id', $this->table, $this->id)) {
       return false;
   }  
   // Create query
