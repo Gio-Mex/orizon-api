@@ -14,7 +14,7 @@ Open terminal and clone the Github repo:
 git clone https://github.com/Gio-Mex/orizon-api.git
 ```
 
-In the ```config``` folder you can find the ```migrations.sql``` file to import the database with some ready-to-use sample data regarding the countries in which the agency operates and the organized trips.
+In the `config` folder you can find the `migrations.sql` file to import the database with some ready-to-use sample data regarding the countries in which the agency operates and the organized trips.
 
 ## API Usage
 
