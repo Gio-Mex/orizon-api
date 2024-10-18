@@ -32,6 +32,7 @@ These APIs are designed for reading, inserting, updating (both case insensitive)
 - Endpoint: `/countries/`
 - Method: `POST`
 - Request Body: {'name': 'country name'}
+
 **Update a country**
 
 - Endpoint: `/countries?id={country Id}`
