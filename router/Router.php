@@ -9,11 +9,6 @@ class Router
     $this->routes[$uri][$method] = $controller;
   }
 
-  public function getRoutes()
-  {
-    return $this->routes;
-  }
-
   // Run the router
   public function route()
   {
